@@ -1,0 +1,15 @@
+tasks.register('twoProjectsTasks') {
+    dependsOn ':project1:task', ':project2:task'
+}
+
+tasks.register('threeProjectsTasks') {
+    dependsOn ':project1:task', ':project2:task', ':project3:task'
+}
+
+tasks.register('twoProjectsTests') {
+    dependsOn ':project1:test', ':project2:test'
+}
+
+tasks.register('threeProjectsTests') {
+    dependsOn ':project1:test', ':project2:test', ':project3:test'
+}

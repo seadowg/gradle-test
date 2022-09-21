@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+tasks.register('task') {
+    doLast {
+        sleep(30000)
+    }
+}
+
+dependencies {
+    repositories {
+        mavenCentral()
+    }
+    
+    testImplementation "junit:junit:4.13.2"
+}
